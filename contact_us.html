@@ -7,15 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/contact_us.css">
     
+
 </head>
 <body>
-    <form method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
+    <form id="contact-form" method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
         <div>
             <div>
                 <label for="fullname">全名</label>
             </div>
             <div>
-                <input type="text" name="fullname" id="fullname">
+                <input type="text" name="fullname" id="fullname" class="input-text">
             </div>
         </div>
         <div>
@@ -64,7 +65,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="fn">
             <button>提交</button>
         </div>
     </form>

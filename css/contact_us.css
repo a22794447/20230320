@@ -11,3 +11,44 @@ button{
 button:hover{
     background-color: darkgray;
 }
+
+#contact-form{
+    border: 1px solid #000;
+    width: 500px;
+    margin:auto;
+    padding:20px;
+    background: rgb(29, 161, 238);
+}
+
+label{
+    font-weight:700;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.input-text{
+    width:80%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:30px;
+}
+
+select{
+    width:80%;
+    height:50px;
+    font-size:30px;
+    magin-bottom:15px;
+}
+
+textarea{
+    width:80%;
+    height:100px;
+    resize:none;
+    margin-bottom: 15px;
+}
+
+.fn{
+    text-align:right;
+}
