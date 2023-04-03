@@ -1,0 +1,21 @@
+.container{
+    width: 500px;
+    height: 100%;
+    margin: auto;
+}
+
+.top-menu{
+    background: rgb(77, 75, 75);
+    color: #aaa;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+
+}
+
+.menu{
+
+}
