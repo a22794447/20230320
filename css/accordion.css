@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.css,.for{
+    color: blue;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.accordion{
+    width: 500px;
+    background: gray;
+    margin: auto;
+}
+
+.aa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: green;
+    color: orangered;
+    font-size: 30px;
+    font-weight: 750;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.aa:hover{
+    background: rgb(155, 238, 155);
+}
+
+.hello{
+    padding: 15px;
+    display: none;
+    background: yellow;
+}
+
+.box:checked + .aa .op{
+    display: none;
+}
+
+.box:checked + .aa .ed{
+    display: block;
+}
+
+.box:checked ~ .hello{
+    display: block;
+}
+
+.ed{
+    display: none;
+}
+
+.box{
+    display: none;
+}
