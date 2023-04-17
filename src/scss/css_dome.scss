@@ -1,0 +1,26 @@
+$w:100px;
+$h:100px;
+
+.s1{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.s2{
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+.s4{
+    width: $w;
+    height: $h;
+    background: black;
+}
+
+.s5{
+    width: $w;
+    height: $h;
+    background: blue;
+}
