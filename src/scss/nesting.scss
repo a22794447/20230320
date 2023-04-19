@@ -9,3 +9,13 @@
         color: red;
     }
 }
+
+.block{
+    >.item{
+        background: red;
+        color: yellow;
+        &hover{
+            background: black;
+        }
+    }
+}

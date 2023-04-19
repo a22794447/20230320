@@ -6,4 +6,12 @@
 }
 #header .title {
   color: red;
+}
+
+.block > .item {
+  background: red;
+  color: yellow;
+}
+.block > .itemhover {
+  background: black;
 }/*# sourceMappingURL=nesting.css.map */
