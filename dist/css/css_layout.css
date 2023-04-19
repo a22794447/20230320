@@ -23,6 +23,13 @@ body {
 }
 
 .hader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.hader .hadre-conter {
   background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -41,6 +48,9 @@ body {
   margin-right: 15px;
   font-size: 18px;
   font-weight: 800;
+}
+.hader .menu ul li:hover {
+  color: purple;
 }
 .hader .menu ul lilast-child {
   margin-right: 0;
@@ -64,4 +74,25 @@ body {
 
 .wrap {
   height: 100vh;
+}
+
+.joinfor {
+  height: 100vh;
+  background: rgb(245, 220, 175);
+}
+.joinfor .join-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.joinfor .join-wrap .join-cont {
+  width: 100%;
+  height: 300px;
+  background: rgb(159, 226, 159);
+  display: flex;
+  justify-content: space-between;
+}
+.joinfor .join-wrap .join-cont > div {
+  width: 50%;
 }/*# sourceMappingURL=css_layout.css.map */
