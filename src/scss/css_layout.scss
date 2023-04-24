@@ -184,7 +184,7 @@ body,html {
 }
 
 .courses {
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgb(48, 48, 48);
     background-image: url(../images/process.jpeg);
     background-size: cover;
@@ -227,7 +227,7 @@ body,html {
         .circle{
             width: 30px;
             height: 30px;
-            background: red;
+            background: rgb(212, 0, 0);
             border-radius: 30px;
             position: relative;
             z-index: 2;
@@ -236,7 +236,7 @@ body,html {
         .text{
             position: absolute;
             left: calc(50% + 50px);
-            background: blue;
+            background: rgb(5, 5, 114);
             padding: 20px;
             border-radius: 5px;
 
@@ -248,11 +248,11 @@ body,html {
         &:nth-child(even){
 
             .circle{
-                background: yellow;
+                background: purple;
             }
 
             .text{
-                background: green;
+                background: rgb(0, 107, 0);
                 left: unset;
                 right: calc(50% + 50px);
                 text-align: right;
