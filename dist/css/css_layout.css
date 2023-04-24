@@ -11,8 +11,9 @@ a {
   color: inherit;
 }
 
-body {
+body, html {
   background: black;
+  scroll-behavior: smooth;
 }
 
 .conter {
@@ -27,7 +28,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 }
 .hader .hadre-conter {
   background: rgb(255, 255, 255);
@@ -72,13 +73,21 @@ body {
   height: 100%;
 }
 
-.wrap {
-  height: 100vh;
-}
-
 .joinfor {
   height: 100vh;
-  background: rgb(245, 220, 175);
+  background: rgb(48, 48, 48);
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+  position: relative;
+}
+.joinfor::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.507);
 }
 .joinfor .join-wrap {
   display: flex;
@@ -89,10 +98,144 @@ body {
 .joinfor .join-wrap .join-cont {
   width: 100%;
   height: 300px;
-  background: rgb(159, 226, 159);
+  background: rgb(3, 50, 58);
+  color: white;
   display: flex;
   justify-content: space-between;
 }
 .joinfor .join-wrap .join-cont > div {
   width: 50%;
+  padding: 30px;
+}
+.joinfor .join-wrap .join-cont .join-cont-l {
+  position: relative;
+}
+.joinfor .join-wrap .join-cont .join-cont-l::before {
+  content: "";
+  position: absolute;
+  border-left: 3px dashed white;
+  height: calc(100% - 60px);
+  right: 0;
+  top: 30px;
+}
+.joinfor .join-wrap .join-cont .text-cont {
+  line-height: 30px;
+  text-align: justify;
+}
+.joinfor .join-wrap .join-cont .for-control {
+  margin-bottom: 15px;
+}
+.joinfor .join-wrap .join-cont .for-control input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  border-radius: 4;
+}
+.joinfor .join-wrap .join-cont .joinfor-submit {
+  text-align: right;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button.primary {
+  background: rgb(53, 53, 197);
+  color: white;
+}
+.button.primary:hover {
+  background: rgb(134, 134, 235);
+}
+
+.slogan {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.slogan::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #1072c2;
+  border-right: solid 180px #fff;
+}
+
+.courses {
+  min-height: 100vh;
+  background-color: rgb(48, 48, 48);
+  background-image: url(../images/process.jpeg);
+  background-size: cover;
+  position: relative;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.courses::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.548);
+}
+
+.flow {
+  position: relative;
+  z-index: 2;
+}
+.flow .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.flow .item::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  border-left: 4px dashed #fff;
+}
+.flow .item .circle {
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+.flow .item .text {
+  position: absolute;
+  left: calc(50% + 50px);
+  background: blue;
+  padding: 20px;
+  border-radius: 5px;
+}
+.flow .item .text h4 {
+  margin-bottom: 10px;
+}
+.flow .item:nth-child(even) .circle {
+  background: yellow;
+}
+.flow .item:nth-child(even) .text {
+  background: green;
+  left: unset;
+  right: calc(50% + 50px);
+  text-align: right;
 }/*# sourceMappingURL=css_layout.css.map */
