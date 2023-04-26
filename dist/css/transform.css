@@ -93,4 +93,23 @@ a {
 .small-font {
   margin: 50px;
   transform: scale(0.5);
+}
+
+.bg-change {
+  margin: 50px auto;
+  background: green;
+  color: orange;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.bg-change:hover {
+  background: orange;
+  color: green;
+  width: 120px;
+  height: 120px;
 }/*# sourceMappingURL=transform.css.map */
