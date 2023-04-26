@@ -42,4 +42,47 @@ a {
   color: white;
   transform: rotate(135deg);
   font-size: 50px;
+}
+
+.product {
+  margin-top: 100px;
+  width: 300px;
+  height: 500px;
+  display: block;
+  background: grey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.product .product-img {
+  width: 100%;
+  height: 200px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+.product .product-img .product-discount {
+  position: absolute;
+  top: 31px;
+  right: -97px;
+  color: rgb(224, 131, 131);
+  background: white;
+  text-align: center;
+  transform: rotate(45deg);
+  width: 100%;
+  font-size: 16px;
+}
+.product .product-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.product .product-memo {
+  margin-top: 10px;
 }/*# sourceMappingURL=transform.css.map */
