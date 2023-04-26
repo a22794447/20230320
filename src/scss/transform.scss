@@ -16,3 +16,20 @@
     background: green;
     color: orange;
 }
+
+.aa{
+    display: flex;
+    margin-top: 150px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(45deg);
+    justify-content: center;
+    align-items: center;
+    
+    .haru{
+        color: white;
+        transform: rotate(135deg);
+        font-size: 50px;
+    }
+}
