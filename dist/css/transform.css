@@ -66,6 +66,9 @@ a {
   position: relative;
   overflow: hidden;
 }
+.product .product-img > div:first-child {
+  transition-duration: 1s;
+}
 .product .product-img:hover > div:first-child {
   transform: scale(2);
 }
@@ -106,6 +109,7 @@ a {
   align-items: center;
   transition-property: all;
   transition-duration: 1s;
+  transition-delay: 0.5s;
 }
 .bg-change:hover {
   background: orange;
