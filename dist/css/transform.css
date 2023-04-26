@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cont {
+  max-width: 500px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.rotate {
+  transform: rotate(142deg);
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  background: green;
+  color: orange;
+}/*# sourceMappingURL=transform.css.map */
