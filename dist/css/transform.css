@@ -66,6 +66,9 @@ a {
   position: relative;
   overflow: hidden;
 }
+.product .product-img:hover > div:first-child {
+  transform: scale(2);
+}
 .product .product-img .product-discount {
   position: absolute;
   top: 31px;
@@ -85,4 +88,9 @@ a {
 }
 .product .product-memo {
   margin-top: 10px;
+}
+
+.small-font {
+  margin: 50px;
+  transform: scale(0.5);
 }/*# sourceMappingURL=transform.css.map */

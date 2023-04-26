@@ -56,6 +56,11 @@
         position: relative;
         overflow: hidden;
 
+        &:hover{
+            >div:first-child{
+                transform: scale(2);
+            }
+        }
 
         .product-discount{
             position: absolute;
@@ -80,4 +85,10 @@
     .product-memo{
         margin-top: 10px;
     }
+}
+
+.small-font{
+    margin: 50px;
+    // font-size: 10px;
+    transform: scale(.5);
 }
