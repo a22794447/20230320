@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cont {
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table th {
+  background: blue;
+  color: white;
+}
+.table td,
+.table th {
+  border: 1px solid black;
+  padding: 10px;
+}
+.table td:last-child {
+  text-align: right;
+}
+
+.func {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.func button {
+  padding: 10px 20px;
+  border: 0;
+  background: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.func button:hover {
+  background: orange;
+}
+
+@media print {
+  .func {
+    display: none;
+  }
+}/*# sourceMappingURL=viewport.css.map */

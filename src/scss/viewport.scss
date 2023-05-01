@@ -1,0 +1,59 @@
+@import "reset";
+
+.cont{
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th{
+        background: blue;
+        color: white;
+    }
+
+    td,
+    th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    td:last-child{
+        text-align: right;
+    }
+}
+
+.func{
+    text-align: right;
+    margin-bottom: 20px;
+
+    button{
+        padding: 10px 20px;
+        border: 0;
+        background: blue;
+        color: white;
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+
+        &:hover{
+            background: orange;
+        }
+    }
+}
+
+@media print{
+    .func{
+        display: none;
+    }
+}
