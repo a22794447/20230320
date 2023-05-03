@@ -1,0 +1,25 @@
+@import "reset";
+
+.colorful{
+    width: 90%;
+    margin: 10px auto;
+    background: yellow;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .colorful{
+        background: blue;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .colorful{
+        background: red;
+        color: yellow;
+    }
+}
