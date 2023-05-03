@@ -269,14 +269,38 @@ body, html {
 }
 
 @media screen and (max-width: 800px) {
+  .hader .hadre-conter {
+    position: relative;
+  }
   .hader .hadre-conter .menu {
-    display: none;
+    position: absolute;
+    background: white;
+    top: -300px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+  }
+  .hader .hadre-conter .menu ul {
+    flex-direction: column;
+  }
+  .hader .hadre-conter .menu ul li {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .hader .hadre-conter .menu ul li:last-child {
+    margin-bottom: 0;
   }
   .hader .hadre-conter .mobile-switch {
     display: flex;
   }
   .hader .hadre-conter #mobile-switch-box:checked ~ .menu {
-    display: block;
+    top: 90px;
+    opacity: 1;
   }
   .hader .hadre-conter #mobile-switch-box:checked ~ .mobile-switch > span {
     background: orange;
@@ -293,5 +317,25 @@ body, html {
     position: relative;
     transform: rotate(-45deg);
     top: -5px;
+  }
+  .joinfor .join-wrap .join-cont {
+    flex-direction: column;
+    background: transparent;
+  }
+  .joinfor .join-wrap .join-cont > div {
+    width: 100%;
+    height: 300px;
+    background: rgb(3, 50, 58);
+  }
+  .joinfor .join-wrap .join-cont .join-cont-l::before {
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    border-left-width: 0;
+    border-bottom: 3px dashed white;
   }
 }/*# sourceMappingURL=rwd_layout.css.map */
