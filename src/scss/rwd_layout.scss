@@ -1,0 +1,297 @@
+@import "reset";
+
+body,html {
+    background: black;
+    scroll-behavior: smooth;
+}
+
+.conter {
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    .hadre-conter{
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 15px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        .menu {
+            ul {
+                list-style-type: none;
+                display: flex;
+        
+                li {
+                    text-align: center;
+                    margin-right: 15px;
+                    font-size: 18px;
+                    font-weight: 800;
+        
+                    &:hover{
+                        color: purple;
+                    }
+        
+                    &last-child {
+                        margin-right: 0;
+        
+                    }
+                    .en {
+                        text-transform: uppercase;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .mobile-switch{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            display: none;
+
+            >span{
+                width: 30px;
+                height: 5px;
+                background: black;
+                margin-bottom: 5px;
+                border-right: 5px;
+                transition: .3s;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
+            &:hover{
+                >span{
+                    background: orange;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: white;
+    height: 100px;
+
+    .footer-conter {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.joinfor{
+    height: 100vh;
+    background: rgb(48, 48, 48);
+    background-image: url(../images/banner.jpeg);
+    background-size: cover;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.507);
+    }
+
+    .join-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .join-cont{
+            width: 100%;
+            height: 300px;
+            background: rgb(3, 50, 58);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            >div{
+                width: 50%;
+                padding: 30px;
+            }
+
+            .join-cont-l{
+                position: relative;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border-left: 3px dashed white;
+                    height: calc(100% - 60px);
+                    right: 0;
+                    top: 30px;
+                }
+            }
+
+            .text-cont{
+                line-height: 30px;
+                text-align: justify;
+            }
+
+            .for-control{
+                margin-bottom: 15px;
+
+                input{
+                    width: 100%;
+                    height: 40px;
+                    border: 0;
+                    outline: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 20px;
+                    border-radius: 4;
+                }
+            }
+
+            .joinfor-submit{
+                text-align: right;
+            }
+
+            
+        }
+    }
+}
+
+.button{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &.primary{
+        background: rgb(53, 53, 197);
+        color: white;
+
+        &:hover{
+            background: rgb(134, 134, 235);
+        }
+    }
+}
+
+.slogan{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 140px);
+        width: 0;
+        height: 3px;
+        border-left: solid 100px #1072c2;
+        border-right: solid 180px #fff;
+    }
+}
+
+.courses {
+    height: 100vh;
+    background-color: rgb(48, 48, 48);
+    background-image: url(../images/process.jpeg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.548);
+    }
+}
+
+.flow{
+    position: relative;
+    z-index: 2;
+
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 0;
+            top: 0;
+            border-left: 4px dashed #fff;
+        }
+
+        .circle{
+            width: 30px;
+            height: 30px;
+            background: rgb(212, 0, 0);
+            border-radius: 30px;
+            position: relative;
+            z-index: 2;
+        }
+    
+        .text{
+            position: absolute;
+            left: calc(50% + 50px);
+            background: rgb(5, 5, 114);
+            padding: 20px;
+            border-radius: 5px;
+
+            h4{
+                margin-bottom: 10px;
+            }
+        }
+
+        &:nth-child(even){
+
+            .circle{
+                background: purple;
+            }
+
+            .text{
+                background: rgb(0, 107, 0);
+                left: unset;
+                right: calc(50% + 50px);
+                text-align: right;
+            }
+        }
+    }
+}
+
+@import "rwd_layout_mobile";
