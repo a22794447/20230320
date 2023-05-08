@@ -349,4 +349,20 @@ body, html {
     border-left-width: 0;
     border-bottom: 3px dashed white;
   }
+  .flow .item {
+    justify-content: flex-start;
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+  .flow .item::before {
+    left: 18px;
+  }
+  .flow .item .text {
+    left: 50px;
+  }
+  .flow .item:nth-child(even) .text {
+    left: 50px;
+    right: unset;
+    text-align: left;
+  }
 }/*# sourceMappingURL=rwd_layout.css.map */
