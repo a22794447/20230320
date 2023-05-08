@@ -70,18 +70,21 @@
     }
 
     .joinfor{
-        
-    
-        &::before{
-            
-        }
-    
+        height: unset;
+        min-height: 100vh;
+
         .join-wrap{
-            
+            height: unset;
+            padding-top: 120px;
+            align-items: flex-start;
+
     
             .join-cont{
                 flex-direction: column;
                 background: transparent;
+                height: unset;
+                padding-bottom: 60px;
+                
 
                 >div{
                     width: 100%;
@@ -103,21 +106,6 @@
                         border-left-width: 0;
                         border-bottom: 3px dashed white;
                     }
-                }
-    
-                .text-cont{
-                    
-                }
-    
-                .for-control{
-    
-                    input{
-                       
-                    }
-                }
-    
-                .joinfor-submit{
-                    
                 }
             }
         }

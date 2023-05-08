@@ -58,7 +58,7 @@ body, html {
 .hader .hadre-conter .menu ul li:hover {
   color: purple;
 }
-.hader .hadre-conter .menu ul lilast-child {
+.hader .hadre-conter .menu ul li:last-child {
   margin-right: 0;
 }
 .hader .hadre-conter .menu ul li .en {
@@ -318,9 +318,20 @@ body, html {
     transform: rotate(-45deg);
     top: -5px;
   }
+  .joinfor {
+    height: unset;
+    min-height: 100vh;
+  }
+  .joinfor .join-wrap {
+    height: unset;
+    padding-top: 120px;
+    align-items: flex-start;
+  }
   .joinfor .join-wrap .join-cont {
     flex-direction: column;
     background: transparent;
+    height: unset;
+    padding-bottom: 60px;
   }
   .joinfor .join-wrap .join-cont > div {
     width: 100%;
