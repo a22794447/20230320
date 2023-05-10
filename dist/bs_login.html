@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="d-flex align-items-center vh-100 justify-content-center">
+        <div class="bg-dark ps-5 pe-5">
+            <div class="text-light p-5">
+                <h1 class="text-center">System Login</h1>
+                <hr class="">
+                <div class="m-3">
+                    <label for="login-account" class="form-label">帳號</label>
+                    <input type="text" id="login-account" name="account" class="form-control">
+                </div>
+                <div class="m-3">
+                    <label for="login-password" class="form-label">密碼</label>
+                    <input type="password" id="login-password" name="password" class="form-control">
+                </div>
+                <div class="form-check m-3">
+                    <input type="checkbox" class="form-check-input" id="long-remember">
+                    <label for="long-remember" class="form-check-label">記住密碼</label>
+                </div>
+                <div class="text-end">
+                    <button class="btn btn-danger">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
