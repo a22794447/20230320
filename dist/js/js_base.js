@@ -139,31 +139,37 @@
 
 // console.table(students);
 
-let students = [];
-students.push({
-    name: 'David',
-    num: 40
-});
-students.push({
-    name: 'John',
-    num: 50
-});
-students.push({
-    name: 'Helen',
-    num: 80
-});
-students.push({
-    name: 'Mary',
-    num: 20
-});
+// let students = [];
+// students.push({
+//     name: 'David',
+//     num: 40
+// });
+// students.push({
+//     name: 'John',
+//     num: 50
+// });
+// students.push({
+//     name: 'Helen',
+//     num: 80
+// });
+// students.push({
+//     name: 'Mary',
+//     num: 20
+// });
 
-console.log(students)
+// console.log(students)
 
-let add = 30;
-students.forEach((student, index) => {
-    console.log(`Student ${student.name}: ${student.num}`);
-    student.num = addNum(students.num, add);
-    students[index] = students;
-})
+// let add = 30;
+// students.forEach((student, index) => {
+//     console.log(`Student ${student.name}: ${student.num}`);
+//     student.num = addNum(students.num, add);
+//     students[index] = students;
+// })
 
-console.table(students)
+// console.table(students)
+
+for (let start = 1; start <= 9; start++){
+    for (let end = 1; end <= 9; end++){
+        console.log(`${start} * ${end} = ${start * end}`)
+    }
+}
