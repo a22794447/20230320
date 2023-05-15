@@ -25,3 +25,55 @@ let num12 = +num1 + +num4;
 let num13 = +num1 + +'a';
 
 console.log(num11, num12, num13);
+
+// 字元 char ,強型態語言時,一次只能塞一個
+let s1 = 'S1 \t S1';
+// 字串 string 
+let s2 = "S2 \t S2";
+
+// escape \
+// \n -> new line
+// \r\n -> new line
+// \t -> tab
+
+console.log(s1);
+console.log(s2);
+
+console.log(num1, num1.toString(), typeof num1, typeof num1.toString());
+
+let b1 = true;
+let b2 = false;
+let b3 = 1;
+let b4 = 0;
+let b5 = 's';
+let b6 = ' ';
+let b7 = -1;
+let b8 = 2;
+
+if (b6) {
+    console.log('Yes');
+} else {
+    console.log('No');
+}
+
+// b4 0為假的
+
+// 陣列, 從0開始做排序
+let students = [1, 2, 3, 4];
+console.log(students);
+
+// 增加
+students.push(5);
+console.log(students);
+// 排列第2的數字
+console.log(students[2]);
+// 中間有::做區隔
+console.log(students.join('::'));
+
+// 尋找3號的排序
+let index = students.indexOf(3);
+console.log(index);
+
+// 刪掉3號
+students.splice(index, 1);
+console.log(students);
