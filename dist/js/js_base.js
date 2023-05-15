@@ -65,12 +65,14 @@
 // // 增加
 // students.push(5);
 // console.log(students);
+
 // // 排列第2的數字
 // console.log(students[2]);
-// // 中間有::做區隔
+
+// // 轉字串, 中間有::做區隔
 // console.log(students.join('::'));
 
-// // 尋找3號的排序
+// // 尋找, 尋找3號的排序
 // let index = students.indexOf(3);
 // console.log(index);
 
@@ -116,23 +118,52 @@
 
 // nums.forEach(add20);
 
-const addNum = (originNum, addNum) => {
-    // let originNum = 40;
-    // let addNum = 20;
-    originNum = +originNum;
-    addNum = +addNum;
-    // 判斷是否真的是數字
-    let total = originNum + addNum;
-    // 判斷是否超過一百分
-    console.log(`In function: ${total}`);
-    return total;
-}
+// const addNum = (originNum, addNum) => {
+//     // let originNum = 40;
+//     // let addNum = 20;
+//     originNum = +originNum;
+//     addNum = +addNum;
+//     // 判斷是否真的是數字
+//     let total = originNum + addNum;
+//     // 判斷是否超過一百分
+//     console.log(`In function: ${total}`);
+//     return total;
+// }
 
-let students = [40, 50, 80, 75];
-let add = 30;
-students.forEach((s, index) => {
-    students[index] = addNum(s, add);
+// let students = [40, 50, 80, 75];
+// let add = 30;
+// students.forEach((s, index) => {
+//     students[index] = addNum(s, add);
+// });
+
+
+// console.table(students);
+
+let students = [];
+students.push({
+    name: 'David',
+    num: 40
+});
+students.push({
+    name: 'John',
+    num: 50
+});
+students.push({
+    name: 'Helen',
+    num: 80
+});
+students.push({
+    name: 'Mary',
+    num: 20
 });
 
+console.log(students)
 
-console.table(students);
+let add = 30;
+students.forEach((student, index) => {
+    console.log(`Student ${student.name}: ${student.num}`);
+    student.num = addNum(students.num, add);
+    students[index] = students;
+})
+
+console.table(students)
