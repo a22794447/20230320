@@ -19,8 +19,23 @@ const genTable = () => {
     let n1 = document.querySelector('#n1');
     let n2 = document.querySelector('#n2');
 
-    console.log(n1, n2);
-    console.log(n1.value, n2.value)
+    if(!n1){
+        return;
+    }
+
+    if(n1.value <= 0){
+        return;
+    }
+
+    if(!n2){
+        return;
+    }
+
+    if(n2.value <= 0){
+        return;
+    }
+
+    console.log('I can!')
 }
 
 let mark = document.querySelector('#mark');
