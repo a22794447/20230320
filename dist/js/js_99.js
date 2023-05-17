@@ -14,3 +14,11 @@
 // showBtn.addEventListener('click', () => {
 //     num1.value = 'ABC';
 // })
+
+const genTable = () => {
+    console.log('123');
+}
+
+let mark = document.querySelector('#mark');
+
+mark.addEventListener('click', genTable);
