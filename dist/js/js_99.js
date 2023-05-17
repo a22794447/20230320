@@ -35,7 +35,26 @@ const genTable = () => {
         return;
     }
 
-    console.log('I can!')
+    let thead=[];
+    thead.push(' ');
+
+    let result = [];
+    for (let i = 1; i <= n1.value; i++) {
+        thead.push(i);
+        for (let f = 1; f <=n2.value; f++) {
+            result.push(`${i} x ${f} = ${i*f}`);
+        }
+    }
+
+    let table =document.querySelector('#table');
+    let theadTr = table.querySelector('thead tr')
+
+    theadTr.innerHTML = '';
+    thead.forEach((n, nindex) => {
+        theadTr.innerHTML += `<th>${n}</th>`
+    })
+
+    console.log(thead);
 }
 
 let mark = document.querySelector('#mark');
