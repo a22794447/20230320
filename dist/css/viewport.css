@@ -11,6 +11,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .cont {
   max-width: 800px;
   height: 100%;

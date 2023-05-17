@@ -11,6 +11,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body, html {
   background: black;
   scroll-behavior: smooth;
