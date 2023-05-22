@@ -20,3 +20,14 @@ let removeClass = document.querySelector('#remove-class');
 removeClass.addEventListener('click', () => {
     uid.classList.remove('active');
 })
+
+let mobileIcon = document.querySelector('#mobile-icon');
+
+
+mobileIcon.addEventListener('click', () => {
+    if (mobileIcon.classList.contains('active')) {
+        mobileIcon.classList.remove('active');
+    } else {
+        mobileIcon.classList.add('active');
+    }
+});
