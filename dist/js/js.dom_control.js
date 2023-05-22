@@ -8,3 +8,15 @@ doing.addEventListener('click', () => {
     uid.style.margin = '10px auto';
     uid.style.textAlign = 'center';
 })
+
+let addClass = document.querySelector('#add-class');
+
+addClass.addEventListener('click', () => {
+    uid.classList.add('active');
+})
+
+let removeClass = document.querySelector('#remove-class');
+
+removeClass.addEventListener('click', () => {
+    uid.classList.remove('active');
+})
