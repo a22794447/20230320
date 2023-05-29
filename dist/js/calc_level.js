@@ -1,50 +1,33 @@
-const sayHi = () => {
-    // let name = document.querySelector('#name')
+const calcLevel = () => {
+    let number = document.querySelector('#number')
 
-    // if (!name) {
-    //     alert('沒有輸入框');
-    //     return;
-    // }
+    if (!number) {
+        alert('沒有輸入框');
+        return;
+    }
 
-    if (!name.value) {
+    if (!number.value) {
         alert('請輸入名字');
         return;
     }
 
     let response = document.querySelector('#response');
-    response.innerHTML = `Hi!, ${name.value}`;
-    name.value = '';
-    name.focus();
+    // 修正為記算
+    response.innerHTML = `Hi!, ${number.value}`;
+    number.value = '';
+    number.focus();
 
 }
 
-let hi = document.querySelector('#hi');
+let level = document.querySelector('#level');
 
-hi.addEventListener('click', sayHi);
+level.addEventListener('click', calcLevel);
 
-let name = document.querySelector('#name');
+let number = document.querySelector('#number');
 
-// name.addEventListener('change', () => {
-//     // 觸發條件：輸入文字，離開輸入框，刪掉文字，離開輸入框
-//     if (!name.value) {
-//         alert('請輸入名字');
-//         name.focus();
-//     }
-
-//     // console.log(name.value)
-// })
-
-// name.addEventListener('blur', () => {
-//     console.log(`blur: ${name.value}`);
-// })
-
-// name.addEventListener('keypress', () => {
-//         console.log(`keypress: ${name.value}`);
-//     })
-
-    name.addEventListener('keyup', (e) => {
+    number.addEventListener('keyup', (e) => {
         if (e.key == 'Enter') {
-            sayHi();
+            calcLevel();
         }
         // console.log(`keyup: ${name.value}`)
     })
