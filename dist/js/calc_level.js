@@ -7,7 +7,7 @@ const calcLevel = () => {
     }
 
     if (!number.value) {
-        alert('請輸入名字');
+        alert('請輸入分數');
         return;
     }
 
