@@ -29,7 +29,9 @@
 
     menu.addEventListener('click', (e) => {
         let target = e.target;
-        console.log(target.innerHTML);
+        if (target.tagName == 'LI') {
+            console.log(target.innerHTML);
+        }
     })
 
     let append = document.querySelector('#append');
