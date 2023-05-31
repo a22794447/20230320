@@ -8,6 +8,13 @@
     margin: auto;
 }
 
+.slogan{
+    background: #4091a5;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
 .todo-input{
     display: flex;
     align-items: center;
@@ -33,11 +40,26 @@
         background: #448817;
         color: white;
         margin-left: 15px;
+        font-size: 20px;
+        font-weight: 800;
     }
 }
 
 .pending-item{
     input[type="checkbox"]:checked~label{
         text-decoration: line-through;
+    }
+}
+
+.todo-status{
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+    >div{
+        width: calc(50% - 8px);
+        border: 1px solid grey;
+        padding: 15px;
     }
 }
