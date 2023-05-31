@@ -46,4 +46,8 @@ ul {
   background: #448817;
   color: white;
   margin-left: 15px;
+}
+
+.pending-item input[type=checkbox]:checked ~ label {
+  text-decoration: line-through;
 }/*# sourceMappingURL=todo.css.map */
