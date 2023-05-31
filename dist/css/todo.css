@@ -21,4 +21,29 @@ ul {
   position: relative;
   padding: 0 15px;
   margin: auto;
+}
+
+.todo-input {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.todo-input > label {
+  margin-right: 15px;
+}
+.todo-input > input {
+  flex: 1;
+  height: 36px;
+  outline: 0;
+  padding: 0 15px;
+  border: 0;
+  border-bottom: 1px solid black;
+  font-size: 25px;
+}
+.todo-input > button {
+  padding: 10px 20px;
+  border: 0;
+  background: #448817;
+  color: white;
+  margin-left: 15px;
 }/*# sourceMappingURL=todo.css.map */
