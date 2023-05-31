@@ -9,26 +9,20 @@
 </head>
 <body>
     <div id="app">
-        {{ name }}
         <div class="container">
             <h1 class="slogan">TODO LIST</h1>
             <div class="todo-input">
                 <label for="item-name">項目名稱</label>
-                <input type="text" id="item-name">
-                <button id="add-btn">加入</button>
+                <input type="text" id="item-name" v-model="itemValue" ref="itemValue"  @keyup.enter="doAddItem">
+                <button id="add-btn" @click="doAddItem">加入</button>
             </div>
             <div class="todo-status">
                 <div class="pending-item">
                     <h3 class="slogan">代辦清單</h3>
                     <ul id="pending-item">
-                        <li>
-                            <input type="checkbox" id="item-1">
-                            <label for="item-1">Hello</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item-2">
-                            <label for="item-2">World</label>
-                        </li>
+                        <li v-for="(item, itemIndex) in pending">
+                            <input type="checkbox">
+                            <label for="">{{ item }}</label>
                     </ul>
                 </div>
                 <div class="pending-item">
