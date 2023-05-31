@@ -10,7 +10,11 @@ const init = () => {
         let value = itemName.value;
 
         if (!value) {
-            alert('請輸入項目名稱');
+            Swal.fire({
+                title: '新增錯誤',
+                text: '請輸入項目名稱',
+                icon: 'error',
+            })
             itemName.focus();
             return;
         }
