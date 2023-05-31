@@ -22,7 +22,14 @@ const init = () => {
             return;
         }
     
-            console.log(value)   
+        let ul = document.querySelector('#pending-item');
+
+        ul.innerHTML += `
+        <li>
+            <input type="checkbox" >
+            <label for="">${value}</label>
+        </li>
+        `
         }
     addBtn.addEventListener('click', () => {
         doAddItem();
