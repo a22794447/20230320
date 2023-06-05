@@ -3,13 +3,14 @@ const database = {
         value = JSON.stringify(value);
         localStorage.setItem(key, value);
     },
-    get(key) {
+    get(key, def) {
         // localStorage.getItem(key);
         let value = localStorage.getItem(key);
         if (value) {
             value = JSON.parse(value);
+            return value;
         }
-        return value;
+        return def;
     },
     remove(key) {
         localStorage.removeItem(key);
@@ -59,6 +60,6 @@ Vue.createApp({
         }
     },
     mounted() {
-        this.pending = database.get('todo-pending');
+        this.pending = database.get('todo-pending', []);
     }
 }).mount('#app');
