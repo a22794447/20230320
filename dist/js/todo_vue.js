@@ -45,6 +45,9 @@ Vue.createApp({
             this.$refs.itemValue.focus();
             this.update();
         },
+        doRemove(index) {
+            console.log(index)
+        },
         toDone(index) {
             // 把代辦項目搬移到已完成資料內
             // 刪除目前代辦項目
