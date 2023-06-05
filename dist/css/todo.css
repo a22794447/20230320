@@ -75,6 +75,17 @@ ul {
   background: rgb(176, 85, 218);
 }
 
+.done-item > ul li {
+  padding: 10px;
+  background: #31dfab;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.done-item > ul li:hover {
+  background: #1c9e77;
+}
+
 .todo-status {
   display: flex;
   margin-top: 15px;

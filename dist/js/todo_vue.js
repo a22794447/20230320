@@ -22,7 +22,11 @@ Vue.createApp({
                 return;
             }
             this.pending.push(value);
-            console.table(this.pending)
+        },
+        toDone(index) {
+            console.log(index);
+            // 把代辦項目搬移到已完成資料內
+            // 刪除目前代辦項目
         }
     }
 }).mount('#app');
