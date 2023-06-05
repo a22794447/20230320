@@ -1,9 +1,18 @@
 const database = {
     set(key, value) {
-        localStorage.srtItem(key, value);
+        value = JSON.stringify(value);
+        localStorage.setItem(key, value);
     },
     get(kry) {
-        localStorage.getItem(key);
+        // localStorage.getItem(key);
+        let value = localStorage.getItem(key);
+        if (value) {
+            value = JSON.parse(key);
+        }
+        return value;
+    },
+    remove(key) {
+        localStorage.removeItem(key);
     }
 }
 
@@ -33,6 +42,7 @@ Vue.createApp({
             this.pending.push(value);
             this.itemValue = '';
             this.$refs.itemValue.focus();
+            database.set('todo-pending', this.pending);
         },
         toDone(index) {
             // 把代辦項目搬移到已完成資料內
