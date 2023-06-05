@@ -43,8 +43,7 @@ Vue.createApp({
             this.pending.push(value);
             this.itemValue = '';
             this.$refs.itemValue.focus();
-            database.set('todo-pending', this.pending);
-            database.set('todo-done', this.done);
+            this.update();
         },
         toDone(index) {
             // 把代辦項目搬移到已完成資料內
@@ -52,13 +51,15 @@ Vue.createApp({
             let value = this.pending[index];
             this.done.push(value);
             this.pending.splice(index, 1);
-            database.set('todo-pending', this.pending);
-            database.set('todo-done', this.done);
+            this.update();
         },
         toPending(index) {
             let value = this.done[index];
             this.pending.push(value);
             this.done.splice(index, 1);
+            this.update();
+        },
+        update() {
             database.set('todo-pending', this.pending);
             database.set('todo-done', this.done);
         }
