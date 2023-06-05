@@ -1,3 +1,12 @@
+const database = {
+    set(key, value) {
+        localStorage.srtItem(key, value);
+    },
+    get(kry) {
+        localStorage.getItem(key);
+    }
+}
+
 Vue.createApp({
     data() {
         return {
