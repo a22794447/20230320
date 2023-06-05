@@ -35,7 +35,9 @@ Vue.createApp({
             // console.log(index, value)
         },
         toPending(index) {
-            
+            let value = this.done[index];
+            this.pending.push(value);
+            this.done.splice(index, 1);
         }
     }
 }).mount('#app');
