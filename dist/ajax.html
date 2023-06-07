@@ -34,6 +34,29 @@
                 // })
 
                 // let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                this.useFetch();
+            },
+            useFetch() {
+                let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                fetch(api).then(response => {
+                    // return response.json();
+                    return response.text();
+                }).then(data => {
+                    data= 'a';
+                    console.log(typeof data);
+                    console.log(data);
+
+                    try {
+                        data = JSON.parse(data);
+                    } catch (e) {
+                        data = {};
+                    }
+
+                    console.log(data);
+                })
+                console.log('BBBB');
+            },
+            useXML() {
                 let api = 'https://book.niceinfos.com/frontend/api/?action=sleep&a=111';
                 let request = new XMLHttpRequest();
                 request.addEventListener('load', () => {
