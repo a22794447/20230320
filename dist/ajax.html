@@ -15,12 +15,16 @@
             {{ response }}
         </div>
 
-        <h2>上傳檔案 FORM</h2>
+        <!-- <h2>上傳檔案 FORM</h2>
         <form method="post" action="https://book.niceinfos.com/frontend/api/" enctype="multipart/form-data">
             <input type="hidden" name="action" value="upload">
             <input type="file" name="file">
             <button type="submit">Upload</button>
-        </form>
+        </form> -->
+
+        <h2>Ajax 上傳檔案</h2>
+        <input type="file" ref="file" multiple accept="image/*">
+        <button @click="doUploadWithAjax">Upload Ajax</button>
     </div>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -33,6 +37,35 @@
             }
         },
         methods: {
+            doUploadWithAjax() {
+                let fileDom = this.$refs.file;
+                if(!fileDom || !fileDom.files[0]) {
+                    return;
+                }
+
+                let api = 'https://book.niceinfos.com/frontend/api/';
+                let form = new FormData();
+                form.append('action', 'upload');
+                form.append('file', 'fileDom.files[0]');
+
+                let options = {
+                    method: 'POST',
+                    bodt: form,
+                };
+
+                fetch(api, options)
+                .then(response => {
+                    return response.text();
+                })
+                .then(data => {
+                    console.log(data);
+                    Swal.fire({
+                        title: '上傳完成',
+                        text: '圖片已上傳',
+                        icon: 'success'
+                    })
+                })
+            },
             doPost() {
                 let api = 'https://book.niceinfos.com/frontend/api/';
 
