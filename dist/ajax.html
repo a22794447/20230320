@@ -33,11 +33,15 @@
                 //     icon: 'success'
                 // })
 
-                let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                // let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                let api = 'https://book.niceinfos.com/frontend/api/?action=sleep&a=111';
                 let request = new XMLHttpRequest();
                 request.addEventListener('load', () => {
                     this.response = request.responseText;
                     console.log('AAAA');
+                    // 因為
+                    let response = JSON.parse(request.responseText);
+                    console.log(response.data);
                 });
 
                 request.open('GET', api);
