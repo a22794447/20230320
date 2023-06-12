@@ -103,12 +103,12 @@ Vue.createApp({
                         setTimeout(() => {
                             let data = JSON.parse(text);
                             console.log(data);
-                            swal.fire({
+                            Swal.fire({
                                 title: '儲存完畢',
                                 text: '資料已儲存',
                                 icon: 'success'
                             })
-                        }, 5000);
+                        }, 2000);
                     })
 
                     Swal.fire({
@@ -119,8 +119,21 @@ Vue.createApp({
                 }
             })
         },
-        doLoadCloud() {
-            console.log('load');
+        async doLoadCloud() {
+            let response = await Swal.fire({
+                title: '載入雲端資料',
+                text: '請輸入 UID',
+                input: 'text'
+            });
+
+            if (response.value) {
+                let api = 'https://book.niceinfos.com/frontend/api/';
+                fetch(`${api}?action=todo&uid=${response.uid}`).then(response => {
+                    return response.text();
+                }).then(text => {
+                    console.log(text);
+                })
+            }
         }
     },
     mounted() {
