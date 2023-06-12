@@ -11,6 +11,10 @@
     <div id="app" v-cloak>
         <div class="container">
             <h1 class="slogan">TODO LIST</h1>
+            <div class="cloud-func">
+                <button class="cloud-save">雲端儲存</button>
+                <button class="cloud-load">雲端上傳</button>
+            </div>
             <div class="todo-input">
                 <label for="item-name">項目名稱</label>
                 <input type="text" id="item-name" v-model="itemValue" ref="itemValue"  @keyup.enter="doAddItem">

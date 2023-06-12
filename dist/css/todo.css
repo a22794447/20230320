@@ -111,4 +111,30 @@ ul {
   width: calc(50% - 8px);
   border: 1px solid grey;
   padding: 15px;
+}
+
+.cloud-func {
+  display: flex;
+  gap: 15px;
+}
+.cloud-func button {
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.cloud-func button.cloud-save {
+  background-color: #18a35d;
+  color: #fff;
+}
+.cloud-func button.cloud-save:hover {
+  background-color: #5ece9a;
+}
+.cloud-func button.cloud-load {
+  background-color: #aa4040;
+  color: #fff;
+}
+.cloud-func button.cloud-load:hover {
+  background-color: #d66c6c;
 }/*# sourceMappingURL=todo.css.map */
