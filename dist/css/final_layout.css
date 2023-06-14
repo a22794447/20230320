@@ -33,6 +33,21 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+.header .header-mobile-switch {
+  display: flex;
+  gap: 5px;
+  width: 30px;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.header .header-mobile-switch > span {
+  width: 100%;
+  height: 5px;
+  background: #0b2855;
+}
+.header .header-logo {
+  flex: 1;
+}
 .header .header-menu {
   display: flex;
   gap: 30px;
@@ -65,4 +80,16 @@ ul {
 
 .page {
   height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    background: #cf2929;
+  }
+  .header .header-menu {
+    display: none;
+  }
+  .header .header-lang {
+    display: none;
+  }
 }/*# sourceMappingURL=final_layout.css.map */
