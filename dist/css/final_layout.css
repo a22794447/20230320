@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}/*# sourceMappingURL=final_layout.css.map */
