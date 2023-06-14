@@ -45,9 +45,6 @@ ul {
   height: 5px;
   background: #0b2855;
 }
-.header .header-logo {
-  flex: 1;
-}
 .header .header-menu {
   display: flex;
   gap: 30px;
@@ -85,6 +82,9 @@ ul {
 @media screen and (max-width: 800px) {
   .header {
     background: #cf2929;
+  }
+  .header .header-logo {
+    flex: 1;
   }
   .header .header-menu {
     display: none;
