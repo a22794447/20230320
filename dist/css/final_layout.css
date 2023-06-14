@@ -21,4 +21,19 @@ ul {
   margin: auto;
   height: 100%;
   position: relative;
+}
+
+.header {
+  height: 80px;
+  background: #dedede;
+  font-weight: 800;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-menu {
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=final_layout.css.map */
