@@ -57,4 +57,8 @@ ul {
   justify-content: center;
   gap: 30px;
   font-size: 35px;
+}
+.footer .footer-copyright {
+  margin-top: 30px;
+  font-size: 14px;
 }/*# sourceMappingURL=final_layout.css.map */
