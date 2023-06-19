@@ -50,18 +50,20 @@
     <div class="slider-block" id="app-slider">
         <div class="slider">
             <ul class="slider-item">
-                <li>
-                    <div class="slider-bg"></div>
-                    <div class="slider-content">
-                        <div class="slider-title">TITLE</div>
-                        <div class="slider-subtitle">SUB TITLE</div>
-                    </div>
-                </li>
+                <template v-for="(item, itemIndex) in items">
+                    <li>
+                        <div class="slider-bg"></div>
+                        <div class="slider-content">
+                            <div class="slider-title">{{ item.title }}</div>
+                            <div class="silder-subtitle">{{ item.subtitle }}</div>
+                        </div>
+                    </li>
+                </template>
             </ul>
             <div class="slider-menu">
-                <div></div>
-                <div></div>
-                <div></div>
+                <template v-for="(item, itemIndex) in items">
+                    <div>{{ itemIndex }}</div>
+                </template>
             </div>
         </div>
     </div>
