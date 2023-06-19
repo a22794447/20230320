@@ -29,7 +29,7 @@ ul {
 
 .header {
   height: 80px;
-  background: #dedede;
+  background: #fff;
   font-weight: 800;
   position: fixed;
   top: 0;
@@ -100,7 +100,7 @@ ul {
   font-size: 14px;
 }
 
-.page {
+.slider-block {
   height: 100vh;
 }
 
@@ -121,7 +121,7 @@ ul {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    background: #dedede;
+    background: #fff;
     display: none;
   }
   .header .header-lang {
