@@ -102,6 +102,48 @@ ul {
 
 .slider-block {
   height: 100vh;
+  background: #000;
+  color: #fff;
+}
+.slider-block .slider {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-block .slider .slider-menu {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.slider-block .slider .slider-menu > div {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+.slider-block .slider .slider-menu > div::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.slider-block .slider .slider-menu > div:hover {
+  background: red;
+}
+.slider-block .slider .slider-menu > div:hover::after {
+  border-color: red;
 }
 
 @media screen and (max-width: 800px) {
