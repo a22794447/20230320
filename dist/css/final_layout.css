@@ -273,6 +273,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 .patent-design .design-wrap .design-content {
   width: 100%;
@@ -293,5 +294,11 @@ body {
   margin-bottom: 15px;
 }
 .patent-design .design-popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: green;
+  z-index: 1;
   display: none;
+  opacity: 0;
 }/*# sourceMappingURL=final_layout.css.map */
