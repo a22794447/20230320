@@ -1,17 +1,22 @@
 const database = {
     set(key, value) {
         write(value, key)
-        value = JSON.stringify(value);
-        localStorage.setItem(key, value);
+        // value = JSON.stringify(value);
+        // localStorage.setItem(key, value);
     },
-    get(key, def) {
-        // localStorage.getItem(key);
-        let value = localStorage.getItem(key);
+    async get(key, def) {
+        let value = await read(key);
         if (value) {
-            value = JSON.parse(value);
             return value;
         }
         return def;
+        // localStorage.getItem(key);
+        // let value = localStorage.getItem(key);
+        // if (value) {
+        //     value = JSON.parse(value);
+        //     return value;
+        // }
+        // return def;
     },
     remove(key) {
         localStorage.removeItem(key);
@@ -147,9 +152,9 @@ Vue.createApp({
             }
         }
     },
-    mounted() {
-        this.pending = database.get('todo-pending', []);
-        this.done = database.get('todo-done', []);
+    async mounted() {
+        this.pending = await database.get('todo-pending', []);
+        this.done = await database.get('todo-done', []);
     },
 
 }).mount('#app');
